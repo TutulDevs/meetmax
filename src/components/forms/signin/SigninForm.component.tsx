@@ -125,7 +125,7 @@ export const SigninForm = () => {
 
       {/* sign in link */}
       <p className="mt-5 text-center font-medium text-sm leading-4.5 text-neutral-900">
-        <span className="">You haven't any account?</span>{" "}
+        <span className="">{"You haven't any account?"}</span>{" "}
         <Link
           href={"/signup"}
           className={cn(buttonVariants({ variant: "link" }), "px-0 py-0")}

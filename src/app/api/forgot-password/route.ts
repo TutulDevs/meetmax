@@ -1,4 +1,4 @@
-import users from "@/mock/users";
+import { users } from "@/mock/users";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {

@@ -1,4 +1,4 @@
-export default [
+export const users = [
   { email: "u1@yopmail.com", password: "Pass.12345" },
   { email: "u2@yopmail.com", password: "Pass.1234" },
   { email: "u3@yopmail.com", password: "Pass.1234" },
