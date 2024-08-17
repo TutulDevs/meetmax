@@ -55,7 +55,7 @@ export const SocialSigninActions = () => {
         {buttons.map((button) => (
           <Button
             key={button.title}
-            className="flex-1 h-auto gap-2 md:gap-6 rounded-md md:rounded-[10px] bg-neutral-900/5 hover:bg-neutral-900/10 text-neutral-900 text-sm md:text-base leading-[18px] md:leading-6 py-2.5 md:py-3.5"
+            className="flex-1 h-auto gap-2 md:gap-6 rounded-md md:rounded-10 bg-neutral-900/5 hover:bg-neutral-900/10 text-neutral-900 text-sm md:text-base leading-4.5 md:leading-6 py-2.5 md:py-3.5"
           >
             {button.icon}
             <span>{button.title}</span>
@@ -66,7 +66,7 @@ export const SocialSigninActions = () => {
       {/* dividers */}
       <div className="flex items-center gap-2 5">
         <span className="flex-1 h-px bg-neutral-900/20" />
-        <span className="font-bold text-neutral-900 text-[10px] md:text-lg leading-4 md:leading-7">
+        <span className="font-bold text-neutral-900 text-2xs md:text-lg leading-4 md:leading-7">
           {"OR"}
         </span>
         <span className="flex-1 h-px bg-neutral-900/20" />

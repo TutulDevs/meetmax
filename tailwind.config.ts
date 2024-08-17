@@ -75,6 +75,18 @@ const config = {
           light: "#212833",
         },
       },
+      lineHeight: {
+        "4.5": "18px",
+        "5.5": "22px",
+        "12": "46px",
+      },
+      borderRadius: {
+        "10": "10px",
+        "20": "20px",
+      },
+      fontSize: {
+        "2xs": "10px",
+      },
       boxShadow: {
         card: "3px -5px 35px 0px rgba(205, 205, 212, 0.1)",
       },

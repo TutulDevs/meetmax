@@ -32,7 +32,7 @@ export const ForgotPasswordForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-[10px] border border-neutral-900/20">
+                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-10 border border-neutral-900/20">
                   <FormLabel>
                     <IconEmail />
                   </FormLabel>
@@ -40,7 +40,7 @@ export const ForgotPasswordForm = () => {
                     <Input
                       placeholder="Your Email"
                       {...field}
-                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-[22px]"
+                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-5.5"
                     />
                   </FormControl>
                 </div>
@@ -53,7 +53,7 @@ export const ForgotPasswordForm = () => {
           {/* submit */}
           <Button
             type="submit"
-            className="w-full md:h-[52px] !mt-5 rounded-md md:rounded-[10px] text-sm md:text-base leading-[22px] md:leading-6"
+            className="w-full md:h-[52px] !mt-5 rounded-md md:rounded-10 text-sm md:text-base leading-5.5 md:leading-6"
           >
             Submit
           </Button>
@@ -61,7 +61,7 @@ export const ForgotPasswordForm = () => {
       </Form>
 
       {/* sign in link */}
-      <p className="mt-5 text-center font-medium text-sm leading-[18px]">
+      <p className="mt-5 text-center font-medium text-sm leading-4.5">
         <Link
           href={"/signup"}
           className={cn(buttonVariants({ variant: "link" }), "px-0 py-0")}

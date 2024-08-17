@@ -37,7 +37,7 @@ export const SigninForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-[10px] border border-neutral-900/20">
+                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-10 border border-neutral-900/20">
                   <FormLabel>
                     <IconEmail />
                   </FormLabel>
@@ -45,7 +45,7 @@ export const SigninForm = () => {
                     <Input
                       placeholder="Your Email"
                       {...field}
-                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-[22px]"
+                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-5.5"
                     />
                   </FormControl>
                 </div>
@@ -61,7 +61,7 @@ export const SigninForm = () => {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-[10px] border border-neutral-900/20">
+                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-10 border border-neutral-900/20">
                   <FormLabel>
                     <IconLock />
                   </FormLabel>
@@ -71,7 +71,7 @@ export const SigninForm = () => {
                       // type={showPassword ? "text" : "password"}
                       placeholder="Enter Password"
                       {...field}
-                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-[22px]"
+                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-5.5"
                     />
                   </FormControl>
 
@@ -86,7 +86,7 @@ export const SigninForm = () => {
           />
 
           {/* remember & forgot */}
-          <div className="flex justify-between flex-wrap gap-2 font-medium text-sm leading-[22px] text-neutral-900">
+          <div className="flex justify-between flex-wrap gap-2 font-medium text-sm leading-5.5 text-neutral-900">
             <FormField
               control={form.control}
               name="remember_me"
@@ -116,7 +116,7 @@ export const SigninForm = () => {
           {/* submit */}
           <Button
             type="submit"
-            className="w-full md:h-[52px] !mt-5 rounded-md md:rounded-[10px] text-sm md:text-base leading-[22px] md:leading-6"
+            className="w-full md:h-[52px] !mt-5 rounded-md md:rounded-10 text-sm md:text-base leading-5.5 md:leading-6"
           >
             Submit
           </Button>
@@ -124,7 +124,7 @@ export const SigninForm = () => {
       </Form>
 
       {/* sign in link */}
-      <p className="mt-5 text-center font-medium text-sm leading-[18px] text-neutral-900">
+      <p className="mt-5 text-center font-medium text-sm leading-4.5 text-neutral-900">
         <span className="">You haven't any account?</span>{" "}
         <Link
           href={"/signup"}

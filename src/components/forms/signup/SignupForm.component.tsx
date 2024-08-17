@@ -59,7 +59,7 @@ export const SignupForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-[10px] border border-neutral-900/20">
+                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-10 border border-neutral-900/20">
                   <FormLabel>
                     <IconEmail />
                   </FormLabel>
@@ -67,7 +67,7 @@ export const SignupForm = () => {
                     <Input
                       placeholder="Your Email"
                       {...field}
-                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-[22px]"
+                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-5.5"
                     />
                   </FormControl>
                 </div>
@@ -83,7 +83,7 @@ export const SignupForm = () => {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-[10px] border border-neutral-900/20">
+                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-10 border border-neutral-900/20">
                   <FormLabel>
                     <IconUser />
                   </FormLabel>
@@ -91,7 +91,7 @@ export const SignupForm = () => {
                     <Input
                       placeholder="Your Name"
                       {...field}
-                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-[22px]"
+                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-5.5"
                     />
                   </FormControl>
                 </div>
@@ -107,7 +107,7 @@ export const SignupForm = () => {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-[10px] border border-neutral-900/20">
+                <div className="flex items-center gap-2 md:gap-2.5 px-2.5 md:px-5 rounded-md md:rounded-10 border border-neutral-900/20">
                   <FormLabel>
                     <IconLock />
                   </FormLabel>
@@ -116,7 +116,7 @@ export const SignupForm = () => {
                       type={showPassword ? "text" : "password"}
                       placeholder="Create Password"
                       {...field}
-                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-[22px]"
+                      className="h-auto px-0 py-3 md:py-3.5 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 font-medium text-sm leading-5.5"
                     />
                   </FormControl>
 
@@ -142,7 +142,7 @@ export const SignupForm = () => {
                       <FormControl>
                         <Button
                           className={cn(
-                            "flex items-center justify-start gap-2 px-2.5 md:px-5 py-3 md:py-3.5 h-auto rounded-md border border-neutral-900/20 bg-transparent hover:bg-transparent font-medium text-sm leading-[22px]"
+                            "flex items-center justify-start gap-2 px-2.5 md:px-5 py-3 md:py-3.5 h-auto rounded-md border border-neutral-900/20 bg-transparent hover:bg-transparent font-medium text-sm leading-5.5"
                             // !field.value && "text-muted-foreground"
                           )}
                         >
@@ -215,7 +215,7 @@ export const SignupForm = () => {
                             </FormControl>
                             <FormLabel
                               className={cn(
-                                "font-medium text-sm md:text-base leading-[22px] md:leading-6 !m-0 !ml-2 md:!ml-3.5 cursor-pointer",
+                                "font-medium text-sm md:text-base leading-5.5 md:leading-6 !m-0 !ml-2 md:!ml-3.5 cursor-pointer",
                                 gender.value == selectedGender
                                   ? "text-neutral-900"
                                   : "text-neutral-900/60"
@@ -238,7 +238,7 @@ export const SignupForm = () => {
           {/* submit */}
           <Button
             type="submit"
-            className="w-full md:h-[52px] !mt-5 rounded-md md:rounded-[10px] text-sm md:text-base leading-[22px] md:leading-6"
+            className="w-full md:h-[52px] !mt-5 rounded-md md:rounded-10 text-sm md:text-base leading-5.5 md:leading-6"
           >
             Submit
           </Button>
@@ -246,7 +246,7 @@ export const SignupForm = () => {
       </Form>
 
       {/* sign in link */}
-      <p className="mt-5 text-center font-medium text-sm leading-[18px] text-neutral-900">
+      <p className="mt-5 text-center font-medium text-sm leading-4.5 text-neutral-900">
         <span className="">Already have an account?</span>{" "}
         <Link
           href={"/signin"}
