@@ -1,24 +1,23 @@
 import { AuthTopContent } from "@/components/auth_top_content/AuthTopContent.component";
-import { SignupForm } from "@/components/forms/signup/SignupForm.component";
+import { ForgotPasswordForm } from "@/components/forms/forgot_password/ForgotPasswordForm.component";
 import { Card, CardContent } from "@/components/ui/card";
-import React from "react";
 
-const SignUpPage = () => {
+const ForgotPasswordPage = () => {
   return (
     <>
       <AuthTopContent
-        title="Getting Started"
-        subtitle="Create an account to continue and connect with the people."
+        title="Forgot password?"
+        subtitle="Enter your details to receive a reset link"
       />
 
       {/* form */}
       <Card>
         <CardContent>
-          <SignupForm />
+          <ForgotPasswordForm />
         </CardContent>
       </Card>
     </>
   );
 };
 
-export default SignUpPage;
+export default ForgotPasswordPage;

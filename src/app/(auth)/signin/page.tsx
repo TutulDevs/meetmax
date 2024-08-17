@@ -1,24 +1,23 @@
 import { AuthTopContent } from "@/components/auth_top_content/AuthTopContent.component";
-import { SignupForm } from "@/components/forms/signup/SignupForm.component";
+import { SigninForm } from "@/components/forms/signin/SigninForm.component";
 import { Card, CardContent } from "@/components/ui/card";
-import React from "react";
 
-const SignUpPage = () => {
+const SignInPage = () => {
   return (
     <>
       <AuthTopContent
-        title="Getting Started"
-        subtitle="Create an account to continue and connect with the people."
+        title="Sign In"
+        subtitle="Welcome back, you've been missed!"
       />
 
       {/* form */}
       <Card>
         <CardContent>
-          <SignupForm />
+          <SigninForm />
         </CardContent>
       </Card>
     </>
   );
 };
 
-export default SignUpPage;
+export default SignInPage;

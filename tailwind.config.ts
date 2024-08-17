@@ -75,6 +75,9 @@ const config = {
           light: "#212833",
         },
       },
+      boxShadow: {
+        card: "3px -5px 35px 0px rgba(205, 205, 212, 0.1)",
+      },
       fontFamily: {
         sans: ["var(--font-sans)"],
       },

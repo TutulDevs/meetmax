@@ -6,12 +6,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import Link from "next/link";
 
 export const AuthHeader = () => {
   return (
     <header className="px-8 py-6 flex justify-between items-center">
       {/* logo */}
-      <div className="flex items-center gap-2.5">
+      <Link href="/" className="flex items-center gap-2.5">
         <Image
           src="/logo.svg"
           alt="logo"
@@ -23,7 +24,7 @@ export const AuthHeader = () => {
         <span className="font-bold text-xs sm:text-lg text-neutral-900 leading-[18px] sm:leading-7">
           {"Meetmax"}
         </span>
-      </div>
+      </Link>
 
       {/* langs */}
       <div>
