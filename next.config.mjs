@@ -11,9 +11,15 @@ const nextConfig = {
       {
         // https://t-meetmax.vercel.app/
         protocol: "https",
-        hostname: "t-meetmax.vercel.appe",
+        hostname: "t-meetmax.vercel.app",
         port: "",
         pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "randomuser.me",
+        port: "",
+        pathname: "/api/**",
       },
     ],
   },

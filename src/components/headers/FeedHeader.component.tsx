@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export const FeedHeader = () => {
   return (
-    <header className="flex items-center gap-5 md:gap-0 py-4 md:py-[18px] px-5 md:px-0 bg-white md:bg-transparent">
+    <header className="fixed top-0 left-0 right-0 z-10 flex items-center gap-5 md:gap-0 py-4 md:py-[18px] px-5 md:px-0 bg-white md:bg-neutral">
       {/* logo */}
       <Link href="/" className="w-60 pl-5 hidden md:flex items-center gap-2.5">
         <Image
