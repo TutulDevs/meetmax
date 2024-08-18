@@ -29,7 +29,7 @@ export const AuthHeader = () => {
       {/* langs */}
       <div>
         <Select defaultValue="en">
-          <SelectTrigger className="px-2.5 sm:px-5 py-1 sm:py-2 shadow h-6 sm:h-[38px] font-medium text-neutral-900 text-2xs sm:text-sm leading-4 sm:leading-5.5 [&>svg]:w-3 sm:[&>svg]:w-4 gap-2 sm:gap-5">
+          <SelectTrigger className="px-2.5 sm:px-5 py-1 sm:py-2 shadow h-6 sm:h-9.5 font-medium text-neutral-900 text-2xs sm:text-sm leading-4 sm:leading-5.5 [&>svg]:w-3 sm:[&>svg]:w-4 gap-2 sm:gap-5">
             <SelectValue placeholder="select" />
           </SelectTrigger>
 

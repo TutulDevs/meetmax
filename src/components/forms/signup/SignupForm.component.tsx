@@ -238,7 +238,7 @@ export const SignupForm = () => {
           {/* submit */}
           <Button
             type="submit"
-            className="w-full md:h-[52px] !mt-5 rounded-md md:rounded-10 text-sm md:text-base leading-5.5 md:leading-6"
+            className="w-full md:h-13 !mt-5 rounded-md md:rounded-10 text-sm md:text-base leading-5.5 md:leading-6"
           >
             Submit
           </Button>
