@@ -25,7 +25,7 @@ export const FeedHeader = () => {
       </Link>
 
       {/* search */}
-      <div className="order-2 md:order-1 flex-1 md:max-w-[542px] flex items-center gap-2.5 px-2.5 md:px-5 border border-neutral-900/40 rounded-10">
+      <div className="order-2 md:order-1 flex-1 md:max-w-lg-1 flex items-center gap-2.5 px-2.5 md:px-5 border border-neutral-900/40 rounded-10">
         <IconSearch className="w-3.5 md:w-4 h-3.5 md:h-4" />
 
         <Input
@@ -42,7 +42,7 @@ export const FeedHeader = () => {
           </span>
 
           <Avatar className="!rounded-10 w-8 md:w-10 h-8 md:h-10">
-            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarImage src="https://randomuser.me/api/portraits/men/1.jpg" />
             <AvatarFallback className="!rounded-10 w-8 md:w-10 h-8 md:h-10">
               CN
             </AvatarFallback>

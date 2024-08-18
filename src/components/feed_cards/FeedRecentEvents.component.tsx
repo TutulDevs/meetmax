@@ -1,11 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { IconBook, IconCamera, IconDots } from "../icons";
-import { friendsInRecentEvents } from "@/mock/friends";
+import { UsersGroup } from "../users_group/UsersGroup.component";
+import { cn } from "@/lib/utils";
 
-export const FeedRecentEvents = () => {
+export const FeedRecentEvents: React.FC<{ className?: string }> = ({
+  className,
+}) => {
   return (
-    <Card className="rounded-2xl flex-1">
+    <Card className={cn("rounded-2xl flex-1", className)}>
       <CardHeader className="flex-row justify-between items-center px-4.5 py-3 border-b border-neutral-900/20">
         <CardTitle className="font-bold text-base leading-6 text-neutral-900">
           Recent Events
@@ -62,25 +64,5 @@ export const FeedRecentEvents = () => {
         </div>
       </CardContent>
     </Card>
-  );
-};
-
-const UsersGroup: React.FC<{ count: number }> = ({ count }) => {
-  return (
-    <div className="flex items-center -space-x-1 overflow-hidden">
-      {friendsInRecentEvents.map((x) => (
-        <Avatar key={x.name} className="w-5.5 h-5.5">
-          <AvatarImage src={x.img} />
-          <AvatarFallback className="w-5.5 h-5.5">{x.name[0]}</AvatarFallback>
-        </Avatar>
-      ))}
-
-      <Avatar className="w-5.5 h-5.5">
-        <AvatarImage src={""} />
-        <AvatarFallback className="w-5.5 h-5.5 bg-neutral-900 text-white font-medium text-xs leading-4.5">
-          {`+${count}`}
-        </AvatarFallback>
-      </Avatar>
-    </div>
   );
 };

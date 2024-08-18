@@ -11,7 +11,7 @@ export default function RootLayoutAuth({
       <AuthHeader />
 
       {/* content */}
-      <main className="max-w-[580px] w-full mx-auto px-6 py-8">{children}</main>
+      <main className="max-w-xl-1 w-full mx-auto px-6 py-8">{children}</main>
     </>
   );
 }

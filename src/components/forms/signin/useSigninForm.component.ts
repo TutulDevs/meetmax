@@ -52,6 +52,7 @@ export const useSigninForm = () => {
       if (ok) {
         setToken(user);
         router.push("/");
+        router.replace("/");
         router.refresh();
       }
     } catch (error) {
