@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export const FeedHeader = () => {
   return (
-    <header className="flex items-center gap-5 md:gap-0 py-4 md:py-6 px-5 md:px-0">
+    <header className="flex items-center gap-5 md:gap-0 py-4 md:py-[18px] px-5 md:px-0 bg-white md:bg-transparent">
       {/* logo */}
       <Link href="/" className="w-60 pl-5 hidden md:flex items-center gap-2.5">
         <Image
@@ -30,7 +30,7 @@ export const FeedHeader = () => {
 
         <Input
           placeholder="Search for something here..."
-          className="h-8 md:h-10 rounded-[inherit] bg-transparent font-normal text-xs md:text-sm leading-4.5 md:leading-5.5 text-neutral-900 ring-offset-transparent placeholder:text-neutral-900/60 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-2"
+          className="h-8 md:h-10 px-0 py-0 rounded-[inherit] bg-transparent font-normal text-xs md:text-sm leading-4.5 md:leading-5.5 text-neutral-900 border-0 ring-offset-transparent placeholder:text-neutral-900/60 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0"
         />
       </div>
 
