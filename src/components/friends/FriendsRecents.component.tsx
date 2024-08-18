@@ -12,18 +12,43 @@ export const FriendsRecents: React.FC<{ className?: string }> = ({
         {friendsRecentsList.map((fr) => (
           <div
             key={fr.name}
-            className="flex flex-col items-center justify-center gap-[18px] md:gap-6 text-center"
+            className="flex flex-col items-center justify-center gap-4.5 md:gap-6 text-center relative group"
           >
-            <Avatar className="flex-1 w-[50px] h-[50px] border-2 border-primary">
+            <Avatar className="flex-1 w-12.5 h-12.5 border-2 border-primary">
               <AvatarImage src={fr.img} />
-              <AvatarFallback className="w-[50px] h-[50px]">
+              <AvatarFallback className="w-12.5 h-12.5">
                 {fr.name[0]?.toUpperCase()}
               </AvatarFallback>
             </Avatar>
 
-            <div className="font-medium text-sm leading-5.5 text-neutral-900">
+            <span className="font-medium text-sm leading-5.5 text-neutral-900">
               {fr.name}
-            </div>
+            </span>
+
+            {/* add btn */}
+            <button
+              type="button"
+              className={cn(
+                "absolute top-10.5 left-1/2 -translate-x-1/2 w-4 h-4 grid place-items-center bg-white rounded-full opacity-0 group-hover:opacity-100 duration-300"
+              )}
+            >
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.28571 4.28571V0H5.71429V4.28571H10V5.71429H5.71429V10H4.28571V5.71429H0V4.28571H4.28571Z"
+                  fill="white"
+                />
+                <path
+                  d="M4.28571 4.28571V0H5.71429V4.28571H10V5.71429H5.71429V10H4.28571V5.71429H0V4.28571H4.28571Z"
+                  fill="#4E5D78"
+                />
+              </svg>
+            </button>
           </div>
         ))}
       </div>

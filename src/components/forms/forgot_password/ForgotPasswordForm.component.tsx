@@ -63,7 +63,7 @@ export const ForgotPasswordForm = () => {
       {/* sign in link */}
       <p className="mt-5 text-center font-medium text-sm leading-4.5">
         <Link
-          href={"/signup"}
+          href={"/signin"}
           className={cn(buttonVariants({ variant: "link" }), "px-0 py-0")}
         >
           <IconChevronRight className="w-2.5 rotate-180 mr-3.5 !fill-primary text-danger" />

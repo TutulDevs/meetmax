@@ -7,7 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 export const FriendsListAll = () => {
   return (
     <>
-      <div className="space-y-[30px]">
+      <div className="space-y-7.5">
         {/* search */}
         <div className="flex items-center gap-2.5 px-5 border border-neutral-900/40 rounded-10">
           <IconSearch className="w-4 h-4" />
@@ -47,7 +47,7 @@ export const FriendsListAll = () => {
 
         {/* all list */}
         {friendsListAll.map((fr) => (
-          <div key={fr.name} className="flex items-center gap-[18px]">
+          <div key={fr.name} className="flex items-center gap-4.5">
             <Avatar>
               <AvatarImage
                 src={`https://randomuser.me/api/portraits/men/${fr.img}.jpg`}

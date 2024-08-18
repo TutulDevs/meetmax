@@ -14,7 +14,7 @@ export const AuthHeader = () => {
       {/* logo */}
       <Link href="/" className="flex items-center gap-2.5">
         <Image
-          src="/logo.svg"
+          src="/app-logo.svg"
           alt="logo"
           width={26}
           height={26}

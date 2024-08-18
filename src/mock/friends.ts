@@ -26,3 +26,9 @@ export const friendsListAll = [
   { name: "Kujtim Rashiti", isActive: true, img: 15 },
   { name: "Ostoja Ostatij", isActive: true, img: 16 },
 ];
+
+export const friendsInRecentEvents = [
+  { name: "Saleh", img: "https://randomuser.me/api/portraits/men/11.jpg" },
+  { name: "Edilson", img: "https://randomuser.me/api/portraits/men/21.jpg" },
+  { name: "Afrim", img: "https://randomuser.me/api/portraits/women/12.jpg" },
+];

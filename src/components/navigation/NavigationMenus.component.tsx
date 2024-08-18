@@ -37,7 +37,7 @@ export const NavigationMenus = () => {
   };
 
   return (
-    <aside className="fixed md:top-[78px] bottom-0 md:bottom-[unset] left-0 w-full md:w-60 h-auto md:h-screen md:overflow-y-auto px-5 md:py-2.5 bg-white md:bg-transparent">
+    <aside className="fixed md:top-19 bottom-0 md:bottom-[unset] left-0 z-10 w-full md:w-60 h-auto md:h-screen md:overflow-y-auto px-5 md:py-2.5 bg-white">
       <div className="flex flex-row md:flex-col justify-center gap-2.5">
         {menus.map((menu, i) => {
           return (
@@ -56,14 +56,14 @@ export const NavigationMenus = () => {
               <span>{menu.title}</span>
 
               {!menu?.count ? null : (
-                <span className="absolute md:static top-1  w-3.5 md:w-4 md:h-[18px] ml-3.5 rounded-full bg-danger text-white font-light text-2xs md:text-sm grid place-items-center ">
+                <span className="absolute md:static top-1  w-3.5 md:w-4 md:h-4.5 ml-3.5 rounded-full bg-danger text-white font-light text-2xs md:text-sm grid place-items-center ">
                   {menu.count}
                 </span>
               )}
 
               <div
                 className={cn(
-                  "block md:hidden w-1/2 h-[3px] rounded-md bg-transparent group-hover:bg-neutral-900 group-hover:w-full duration-300",
+                  "block md:hidden w-1/2 h-0.75 rounded-md bg-transparent group-hover:bg-neutral-900 group-hover:w-full duration-300",
                   menu.href == pathname && "bg-neutral-900 w-full"
                 )}
               />
