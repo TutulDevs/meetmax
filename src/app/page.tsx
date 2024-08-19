@@ -34,6 +34,8 @@ export default function Home() {
               <FeedRecentEvents className="md:hidden !rounded-none" />
 
               <FeedItem post={posts[1]} />
+
+              <FeedBirthdays className="md:hidden !rounded-none" />
             </div>
 
             {/* cards */}

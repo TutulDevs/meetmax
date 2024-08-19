@@ -6,9 +6,11 @@ import { buttonVariants } from "../ui/button";
 import { cn } from "@/lib/utils";
 import { Input } from "../ui/input";
 
-export const FeedBirthdays = () => {
+export const FeedBirthdays: React.FC<{ className?: string }> = ({
+  className,
+}) => {
   return (
-    <Card className="rounded-2xl flex-1">
+    <Card className={cn("rounded-2xl flex-1", className)}>
       <CardHeader className="flex-row justify-between items-center px-4.5 py-3 border-b border-neutral-900/20">
         <CardTitle className="font-bold text-base leading-6 text-neutral-900">
           Birthdays

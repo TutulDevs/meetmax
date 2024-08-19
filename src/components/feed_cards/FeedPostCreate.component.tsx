@@ -1,10 +1,11 @@
 "use client";
 
-import { IconCameraVideo, IconPhoto, IconUser } from "../icons";
+import { PostDocType } from "@/mock/post_create";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
 import { Card, CardContent } from "../ui/card";
 import { Input } from "../ui/input";
+import { FeedPostCreateForm } from "./FeedPostCreateForm.component";
 
 export const FeedPostCreate = () => {
   return (
@@ -28,9 +29,9 @@ export const FeedPostCreate = () => {
 
         <div className="flex justify-between items-center gap-2">
           <div className="flex items-center gap-6 md:gap-7.5 text-xs md:text-sm leading-4.5 md:leading-5.5 font-medium text-neutral-900">
-            {list.map((x) => (
+            {PostDocType.map((x) => (
               <button
-                key={x.title_lg}
+                key={x.id}
                 type="button"
                 className="flex items-center gap-2 md:gap-2.5"
               >
@@ -42,17 +43,15 @@ export const FeedPostCreate = () => {
             ))}
           </div>
 
-          <Button className="px-3.5 md:px-7.5 h-7.5 md:h-10 rounded-md ">
-            Post
-          </Button>
+          <FeedPostCreateForm
+            trigger={
+              <Button className="px-3.5 md:px-7.5 h-7.5 md:h-10 rounded-md ">
+                Post
+              </Button>
+            }
+          />
         </div>
       </CardContent>
     </Card>
   );
 };
-
-const list = [
-  { icon: <IconCameraVideo />, title_sm: "Live", title_lg: "Live Video" },
-  { icon: <IconPhoto />, title_sm: "Photo", title_lg: "Photo/Video" },
-  { icon: <IconUser />, title_sm: "Feeling", title_lg: "Feeling" },
-];

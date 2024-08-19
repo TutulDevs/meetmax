@@ -20,7 +20,11 @@ type FORM = z.infer<typeof formSchema>;
 export const useSigninForm = () => {
   const form = useForm<FORM>({
     resolver: zodResolver(formSchema),
-    defaultValues: { remember_me: false },
+    defaultValues: {
+      email: "u2@yopmail.com",
+      password: "Pass.1234",
+      remember_me: false,
+    },
   });
 
   const [showPassword, setShowPassword] = useState(false);
@@ -52,7 +56,8 @@ export const useSigninForm = () => {
       if (ok) {
         setToken(user);
         router.push("/");
-        router.replace("/");
+        window.location.href = "/";
+        // router.replace("/");
         router.refresh();
       }
     } catch (error) {
