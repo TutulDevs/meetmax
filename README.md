@@ -78,12 +78,14 @@ Open http://localhost:3000 with your favorite browser to see the project.
 - The avatar images are from [Random User Generator](https://randomuser.me/)
 - The posts data are from a mock file
 - In the sidebar, the **Logout** button is functional
--
+- Click the **Post** button on the post create form to view the modal
+- In the modal, click on any of the buttons from the left side to see the uploaded image
 
 ## TO DOs
 
 - Comments in post
 - Set meta title for all pages
+- Interaction in posts
 - Fetch posts data
 - Add loader
 - Add error file
